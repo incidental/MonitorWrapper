@@ -43,6 +43,11 @@
     <Compile Include="IMonitor.cs" />
     <Compile Include="IProcessRequest.cs" />
     <Compile Include="IRaiseAlert.cs" />
+    <Compile Include="IssueEmail.cs" />
+    <Compile Include="IssueSms.cs" />
+    <Compile Include="LogException.cs" />
+    <Compile Include="Monitor.cs" />
+    <Compile Include="ProcessRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

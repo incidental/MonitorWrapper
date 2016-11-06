@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MonitorWrapper
 {
-    interface IMonitor : IProcessRequest, IRaiseAlert
+    interface IMonitor
     {
         void InitiateCheck();
     }
