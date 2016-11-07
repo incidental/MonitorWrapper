@@ -1,16 +1,23 @@
-﻿using System;
+﻿using MonitorWrapper.RaiseAlerts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MonitorWrapper
+namespace MonitorWrapper.DataAccess
 {
-    class ProcessRequest : IProcessRequest
+    class ProcessDataRequest : IProcessDataRequest
     {
         public IRaiseAlert _concreteRaiseAlert { get; set; }
 
-        public IEnumerable<T> GetHistory<T>()
+        public IEnumerable<T> GetMonitorHistory<T>()
+        {
+            var history = string.Empty;
+            throw new NotImplementedException();
+        }
+
+        public IMonitorRecord GetMonitorValues(int monitorId)
         {
             throw new NotImplementedException();
         }
@@ -21,7 +28,7 @@ namespace MonitorWrapper
             throw new NotImplementedException();
         }
 
-        public bool RecordResult<T>(T monitorResult)
+        public bool RecordMonitorResult<T>(T monitorResult)
         {
             throw new NotImplementedException();
         }

@@ -1,4 +1,4 @@
-﻿namespace MonitorWrapper
+﻿namespace MonitorWrapper.RaiseAlerts
 {
     interface IRaiseAlert
     {

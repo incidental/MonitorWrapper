@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace MonitorWrapper
+namespace MonitorWrapper.RaiseAlerts
 {
-    class LogException
+    class IssueSms
     {
         private IRaiseAlert _raiseAlert { get; set; }
 
-        public LogException(IRaiseAlert raiseAlert)
+        public IssueSms(IRaiseAlert raiseAlert)
         {
             this._raiseAlert = raiseAlert;
         }

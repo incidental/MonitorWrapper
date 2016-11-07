@@ -1,4 +1,7 @@
-﻿using System;
+﻿using MonitorWrapper.CheckTypes;
+using MonitorWrapper.DataAccess;
+using MonitorWrapper.RaiseAlerts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +11,9 @@ namespace MonitorWrapper
 {
     class Monitor : IMonitor
     {
-        public IProcessRequest _processRequest { get; set; }
+        public IProcessDataRequest _processRequest { get; set; }
         public IRaiseAlert _raiseAlert { get; set; }
+        public ICheckType _checkType { get; set; }
 
         public Monitor()
         {
